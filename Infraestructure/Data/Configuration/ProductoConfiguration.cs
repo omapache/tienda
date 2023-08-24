@@ -20,16 +20,16 @@ namespace Persistencia.Data.Configuration
             .HasMaxLength(50);
             builder.Property(p => p.StockMin)
             .IsRequired()
-            .HasMaxLength(50);
+            .HasColumnType("int");
             builder.Property(p => p.StockMax)
             .IsRequired()
-            .HasMaxLength(50);
+            .HasColumnType("int");
             builder.Property(p => p.Stock)
             .IsRequired()
-            .HasMaxLength(50);
+            .HasColumnType("int");
             builder.Property(p => p.ValorVenta)
             .IsRequired()
-            .HasMaxLength(50);
+            .HasColumnType("int");
 
             
         }

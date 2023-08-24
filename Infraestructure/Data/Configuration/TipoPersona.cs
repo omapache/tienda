@@ -11,7 +11,9 @@ namespace Persistencia.Data.Configuration
             // Aquí puedes configurar las propiedades de la entidad Marca
             // utilizando el objeto 'builder'.
             builder.ToTable("tipoPersona");
-
+            
+            builder.HasKey(p => p.IdTPersona);
+            
             builder.Property(p => p.Descripcion)
             .IsRequired()
             .HasMaxLength(50);

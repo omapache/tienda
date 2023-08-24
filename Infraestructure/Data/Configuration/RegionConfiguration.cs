@@ -11,7 +11,6 @@ namespace Persistencia.Data.Configuration
             // Aquí puedes configurar las propiedades de la entidad Marca
             // utilizando el objeto 'builder'.
             builder.ToTable("Region");
-            
            
             builder.Property(p => p.NombreRegion)
             .IsRequired()
