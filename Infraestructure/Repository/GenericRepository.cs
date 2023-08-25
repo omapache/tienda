@@ -1,14 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Core.Interfaces;
+using Core.Entities;
+using System.Linq.Expressions;
+using Infraestructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infraestructure.Repository;
+
 public class GenericRepository<T> : IGenericRepo<T> where T : BaseEntity
 {
     private readonly APITiendaContext _context;
 
-    public GenericRepositoryA(APITiendaContext context)
+    public GenericRepository(APITiendaContext context)
     {
         _context = context;
     }
@@ -31,6 +33,11 @@ public class GenericRepository<T> : IGenericRepo<T> where T : BaseEntity
     public virtual async Task<IEnumerable<T>> GetAllAsync()
     {
         return await _context.Set<T>().ToListAsync();
+    }
+
+    public Task<T> GetAsync(int id)
+    {
+        throw new NotImplementedException();
     }
 
     public virtual async Task<T> GetByIdAsync(int id)
