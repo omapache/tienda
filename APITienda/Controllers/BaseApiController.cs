@@ -1,8 +1,9 @@
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APITienda.Controllers;
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class BaseApiController : ControllerBase
 {
     

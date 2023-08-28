@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "60/9MPvFOx1w02B1ajd06bGD0FQcdBlqGa8qLX2iRSLjX+8JVakNoZJ0oINyXrFOCR0juuh+BbpsDWCNCpH7gw==",
+  "dgSpecHash": "vB/81dZKQL6O6n2tn0HwDhK1uDy1BK/xdQfQakPJ8qrVDp8nJYETuOpX8C1iMybZSMLYFmHA4ssfTJTHBQskPg==",
   "success": true,
-  "projectFilePath": "/home/apolT01-041/Documents/ProyectoNetCore/tienda/Core/Core.csproj",
+  "projectFilePath": "C:\\Users\\APT01-041\\Desktop\\A\\Dotnet\\tienda\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,11 +1,13 @@
+using APITienda.Extensions;
 using Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.ConfigureCors();
 builder.Services.AddControllers();
+
 builder.Services.AddDbContext<APITiendaContext>(OptionsBuilder => 
 {
     string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -23,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
