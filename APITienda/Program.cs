@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.ConfigureCors();
 builder.Services.AddControllers();
-
+builder.Services.AddAplicacionServices();
 builder.Services.AddDbContext<APITiendaContext>(OptionsBuilder => 
 {
     string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

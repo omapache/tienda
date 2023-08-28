@@ -1,10 +1,9 @@
 using System.Linq.Expressions;
-using System.Threading.Tasks;
 using Core.Entities;
 namespace Core.Interfaces;
 public interface IGenericRepo<T> where T : BaseEntity
 {
-    Task<T> GetAsync(int id);
+    Task<T> GetByIdAsync(int id);
     Task<IEnumerable<T>> GetAllAsync();
     IEnumerable<T> Find(Expression<Func<T, bool>> expression);
     void Add(T entity);

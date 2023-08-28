@@ -31,4 +31,18 @@ public class PaisController : BaseApiController
         var pais = await unitofwork.Paises.GetByIdAsync(id);
         return Ok(pais);
     }
+
+    [HttpPost]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+    public async Task<ActionResult<Pais>> Post(Pais pais){
+        unitofwork.Paises.Add(pais);
+        await unitofwork.SaveAsync();
+        if (pais == null)
+        {
+            return BadRequest();
+        }
+        return CreatedAtAction(nameof(Post),new {id=pais.Id},pais);
+    }
 }
