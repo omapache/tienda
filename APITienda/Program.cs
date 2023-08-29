@@ -1,3 +1,4 @@
+using System.Reflection;
 using APITienda.Extensions;
 using Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -5,7 +6,9 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 builder.Services.ConfigureCors();
+
 builder.Services.AddControllers();
 builder.Services.AddAplicacionServices();
 builder.Services.AddDbContext<APITiendaContext>(OptionsBuilder => 

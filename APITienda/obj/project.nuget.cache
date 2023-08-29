@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "EMaNIwPt5GXh59/M7aBQpOL2HY6edgM1dNPao4nj1yb4zyT240eVos3OZWMLaqbZ+f7RevqaG9aewWg05PJFQw==",
+  "dgSpecHash": "SCFmvrT00NsiG3b3y1GW38yGcpCSBmqq7s9M9xiKR7X5kFIRAEQanLWtgGp8VzkCz+Z39X5J13hr3KQUN/Djbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\APT01-041\\Desktop\\A\\Dotnet\\tienda\\APITienda\\APITienda.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\APT01-041\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\APT01-041\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\APT01-041\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\APT01-041\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "C:\\Users\\APT01-041\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\APT01-041\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\APT01-041\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
     "C:\\Users\\APT01-041\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
